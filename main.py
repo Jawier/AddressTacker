@@ -32,6 +32,7 @@ def get_loan_info(address):
             'loan_dUSD': r['data'][0]['loanAmounts'][0]['amount'],
             'loan_dARKK': r['data'][0]['loanAmounts'][1]['amount'],
             'loan_value_USD': r['data'][0]['loanValue'],
+            'informativeRatio': r['data'][0]['informativeRatio'],
             'UTC': datetime.now().replace(microsecond=0).isoformat(' ')}
 
 
